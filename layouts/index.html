@@ -1,0 +1,54 @@
+{{define "main"}}
+<head> </head>
+<div class="main_container">
+  <div
+    style="background-image: url({{.Site.Params.header_image}});"
+    class="main_header_image"
+  ></div>
+  <div class="main_text">
+    <h2>{{.Title}}</h2>
+    <p>{{ .Site.Params.description}}</p>
+  </div>
+  <div class="main_bottom">
+    <div class="main_taxonomies">
+      <!-- authors list -->
+      {{ partial "authors-list" .}}
+
+      <!-- journals list -->
+      {{ partial "journals-list" .}}
+
+      <!-- categories list -->
+      {{ partial "categories-list" .}}
+    </div>
+    <div
+      style="background-image: url({{.Site.Params.bottom_image}});"
+      class="main_bottom_image"
+    ></div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --colorDark: #111;
+    --textColor: #ffffff;
+    --mainColor: #006e56;
+    --secondaryColor: #080808;
+    --backgroundColor: #0c0c0c;
+    --borderGray: #4e4e4e;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--backgroundColor);
+  }
+
+  hr {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(70deg, transparent, rgb(51, 51, 51), transparent);
+    border: none;
+  }
+</style>
+
+{{end}}
