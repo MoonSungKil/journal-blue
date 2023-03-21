@@ -19,6 +19,7 @@ vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
 Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
 faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
 Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis."""
+footer = "Copyright © 2023 My Website. All rights reserved."
 
 
 [taxonomies]
